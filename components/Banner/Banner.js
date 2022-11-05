@@ -17,7 +17,7 @@ export default function Banner() {
   useEffect(() => {
     VanillaTilt.init(tilt.current, options);
     VanillaTilt.init(tilt1.current, options);
-  }, []);
+  }, [options]);
 
   return (
     <div className={styles.banner}>
