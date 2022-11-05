@@ -8,6 +8,7 @@ import arrow from "../../assets/images/arrow.svg";
 import Image from "next/image";
 import VanillaTilt from "vanilla-tilt";
 import Link from "next/link";
+import { ImageLoader } from "../../utils/image-loader";
 
 export default function Services() {
   const tilt = useRef(null);
@@ -37,6 +38,7 @@ export default function Services() {
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
                   <Image
+                    loader={ImageLoader}
                     src={treasury}
                     width={226}
                     height={218}
@@ -47,7 +49,13 @@ export default function Services() {
                   <div className={styles.headingWrap}>
                     <h3 className={styles.serviceHeading}>Treasury</h3>
                     <div className={styles.arrow}>
-                      <Image src={arrow} width={32} height={32} alt="Arrow" />
+                      <Image
+                        loader={ImageLoader}
+                        src={arrow}
+                        width={32}
+                        height={32}
+                        alt="Arrow"
+                      />
                     </div>
                   </div>
                   <p className={styles.description}>
@@ -59,13 +67,25 @@ export default function Services() {
             <div ref={tilt1} className={styles.serviceCard}>
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
-                  <Image src={devwork} width={184} height={155} alt="devwork" />
+                  <Image
+                    loader={ImageLoader}
+                    src={devwork}
+                    width={184}
+                    height={155}
+                    alt="devwork"
+                  />
                 </div>
                 <div className={styles.contentBlock}>
                   <div className={styles.headingWrap}>
                     <h3 className={styles.serviceHeading}>DevWorks</h3>
                     <div className={styles.arrow}>
-                      <Image src={arrow} width={32} height={32} alt="Arrow" />
+                      <Image
+                        loader={ImageLoader}
+                        src={arrow}
+                        width={32}
+                        height={32}
+                        alt="Arrow"
+                      />
                     </div>
                   </div>
                   <p className={styles.description}>
@@ -77,13 +97,25 @@ export default function Services() {
             <div ref={tilt2} className={styles.serviceCard}>
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
-                  <Image src={design} width={233} height={135} alt="design" />
+                  <Image
+                    loader={ImageLoader}
+                    src={design}
+                    width={233}
+                    height={135}
+                    alt="design"
+                  />
                 </div>
                 <div className={styles.contentBlock}>
                   <div className={styles.headingWrap}>
                     <h3 className={styles.serviceHeading}>Design</h3>
                     <div className={styles.arrow}>
-                      <Image src={arrow} width={32} height={32} alt="Arrow" />
+                      <Image
+                        loader={ImageLoader}
+                        src={arrow}
+                        width={32}
+                        height={32}
+                        alt="Arrow"
+                      />
                     </div>
                   </div>
                   <p className={styles.description}>
@@ -96,6 +128,7 @@ export default function Services() {
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
                   <Image
+                    loader={ImageLoader}
                     src={flagship}
                     width={316}
                     height={164}
@@ -106,7 +139,13 @@ export default function Services() {
                   <div className={styles.headingWrap}>
                     <h3 className={styles.serviceHeading}>Flagships</h3>
                     <div className={styles.arrow}>
-                      <Image src={arrow} width={32} height={32} alt="Arrow" />
+                      <Image
+                        loader={ImageLoader}
+                        src={arrow}
+                        width={32}
+                        height={32}
+                        alt="Arrow"
+                      />
                     </div>
                   </div>
                   <p className={styles.description}>

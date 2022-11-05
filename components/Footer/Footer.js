@@ -5,6 +5,7 @@ import twitter from "../../assets/images/twitter.svg";
 import telegram from "../../assets/images/telegram.svg";
 import discord from "../../assets/images/discord.svg";
 import Link from "next/link";
+import { ImageLoader } from "../../utils/image-loader";
 
 export default function Footer() {
   return (
@@ -15,7 +16,13 @@ export default function Footer() {
             <div className={styles.logoWrap}>
               <Link href="/" passHref>
                 <div className={styles.logo}>
-                  <Image src={logo} width={220} height={48} alt="logo" />
+                  <Image
+                    loader={ImageLoader}
+                    src={logo}
+                    width={220}
+                    height={48}
+                    alt="logo"
+                  />
                 </div>
               </Link>
               <p className={styles.companyText}>
@@ -27,12 +34,19 @@ export default function Footer() {
               <div className={styles.communityWrap}>
                 <Link href="/" passHref>
                   <div className={styles.socialLogo}>
-                    <Image src={twitter} width={40} height={40} alt="twitter" />
+                    <Image
+                      loader={ImageLoader}
+                      src={twitter}
+                      width={40}
+                      height={40}
+                      alt="twitter"
+                    />
                   </div>
                 </Link>
                 <Link href="/" passHref>
                   <div className={styles.socialLogo}>
                     <Image
+                      loader={ImageLoader}
                       src={telegram}
                       width={40}
                       height={40}
@@ -42,7 +56,13 @@ export default function Footer() {
                 </Link>
                 <Link href="/" passHref>
                   <div className={styles.socialLogo}>
-                    <Image src={discord} width={40} height={40} alt="discord" />
+                    <Image
+                      loader={ImageLoader}
+                      src={discord}
+                      width={40}
+                      height={40}
+                      alt="discord"
+                    />
                   </div>
                 </Link>
               </div>

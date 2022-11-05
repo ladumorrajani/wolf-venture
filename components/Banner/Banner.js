@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import bannerImg from "../../assets/images/bannerImg.svg";
 import VanillaTilt from "vanilla-tilt";
+import { ImageLoader } from "../../utils/image-loader";
 
 export default function Banner() {
   const tilt = useRef(null);
@@ -26,6 +27,7 @@ export default function Banner() {
         <div className={styles.bannerCaption}>
           <div ref={tilt} className={styles.bannerImg}>
             <Image
+              loader={ImageLoader}
               src={bannerImg}
               width={307}
               height={307}

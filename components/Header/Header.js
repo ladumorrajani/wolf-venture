@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.svg";
 import Link from "next/link";
 import cx from "classnames";
+import { ImageLoader } from "../../utils/image-loader";
 
 export default function Header() {
   const [active, setActive] = useState(false);
@@ -22,7 +23,13 @@ export default function Header() {
         <div className={styles.headerWrap}>
           <Link href="/" passHref>
             <div className={styles.logo}>
-              <Image src={logo} width={220} height={48} alt="logo" />
+              <Image
+                loader={ImageLoader}
+                src={logo}
+                width={220}
+                height={48}
+                alt="logo"
+              />
             </div>
           </Link>
           <ul className={styles.navigation}>

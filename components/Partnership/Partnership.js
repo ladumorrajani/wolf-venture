@@ -3,6 +3,7 @@ import matrix from "../../assets/images/matrix.png";
 import oneRing from "../../assets/images/onering.png";
 import voidCash from "../../assets/images/voidcash.png";
 import Image from "next/image";
+import { ImageLoader } from "../../utils/image-loader";
 
 export default function Partnership() {
   return (
@@ -21,9 +22,27 @@ export default function Partnership() {
             vision
           </p>
           <div className={styles.partnerList}>
-            <Image src={matrix} width={190} height={40} alt="Matrix" />
-            <Image src={oneRing} width={196} height={40} alt="oneRing" />
-            <Image src={voidCash} width={171} height={40} alt="voidCash" />
+            <Image
+              loader={ImageLoader}
+              src={matrix}
+              width={190}
+              height={40}
+              alt="Matrix"
+            />
+            <Image
+              loader={ImageLoader}
+              src={oneRing}
+              width={196}
+              height={40}
+              alt="oneRing"
+            />
+            <Image
+              loader={ImageLoader}
+              src={voidCash}
+              width={171}
+              height={40}
+              alt="voidCash"
+            />
           </div>
         </div>
       </div>

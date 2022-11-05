@@ -1,6 +1,7 @@
 import styles from "./InnerConnection.module.css";
 import flowChart from "../../assets/images/flowchart.svg";
 import Image from "next/image";
+import { ImageLoader } from "../../utils/image-loader";
 
 export default function InnerConnection() {
   return (
@@ -12,7 +13,13 @@ export default function InnerConnection() {
             to ultimately feed into the value proposition of $WV
           </p>
           <div className={styles.flowChart}>
-            <Image src={flowChart} width={920} height={617} alt="Flow chart" />
+            <Image
+              loader={ImageLoader}
+              src={flowChart}
+              width={920}
+              height={617}
+              alt="Flow chart"
+            />
           </div>
         </div>
       </div>
