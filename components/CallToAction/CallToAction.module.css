@@ -1,0 +1,123 @@
+.callToAction {
+  width: 100%;
+  position: relative;
+}
+
+.callToAction:before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  left: 0;
+  background: url(../../assets/images/cta-left.svg) no-repeat;
+  width: 622px;
+  height: 1037px;
+  z-index: 0;
+}
+
+.callToAction:after {
+  content: "";
+  position: absolute;
+  top: -300px;
+  right: 0;
+  background: url(../../assets/images/cta-right.svg) no-repeat;
+  width: 582px;
+  height: 786px;
+  z-index: 0;
+}
+
+.wrapper {
+  background: url(../../assets/images/cta-bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  text-align: center;
+  padding: 64px;
+  position: relative;
+  z-index: 1;
+}
+
+.contentBlk {
+  max-width: 643px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.btnWrap {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  .callToAction:before {
+    top: -190px;
+    width: 331px;
+    height: 597px;
+    background-size: 331px;
+  }
+
+  .callToAction:after {
+    top: -160px;
+    width: 400px;
+    height: 600px;
+    background-size: 400px;
+  }
+
+  .wrapper {
+    padding: 48px;
+  }
+
+  .heading {
+    font-size: 38px;
+    line-height: 52px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 35px;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 641px) {
+  .callToAction:before {
+    top: -190px;
+    width: 200px;
+    background-size: 200px;
+    height: 597px;
+  }
+  .callToAction:after {
+    top: -160px;
+    width: 200px;
+    background-size: 200px;
+    height: 600px;
+  }
+  .subHeading {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .btnWrap {
+    gap: 10px;
+  }
+}

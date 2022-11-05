@@ -1,0 +1,144 @@
+.footer {
+  background: linear-gradient(180deg, rgba(0, 0, 51, 0) 0%, #000033 100%);
+  position: relative;
+  z-index: 1;
+}
+
+.topFooter {
+  padding: 80px 0 45px;
+}
+
+.topFooterWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logoWrap {
+  max-width: 265px;
+  width: 100%;
+}
+
+.logo {
+  max-width: 220px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.companyText {
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+
+.heading {
+  font-size: 20px;
+  line-height: 26px;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.community {
+  text-align: center;
+}
+
+.communityWrap {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 64px;
+}
+
+.navigation {
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navigation a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.navigation a:hover {
+  opacity: 0.8;
+}
+
+.bottomFooter {
+  padding: 32px 0 26px;
+  text-align: center;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1023px) {
+  .topFooter {
+    padding: 80px 0 45px;
+  }
+  .logoWrap {
+    max-width: 180px;
+  }
+  .logo {
+    max-width: 150px;
+  }
+  .companyText {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .communityWrap {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .footerLinks {
+    gap: 20px;
+  }
+  .bottomFooter {
+    padding: 26px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .topFooterWrap {
+    flex-wrap: wrap;
+  }
+  .logoWrap {
+    max-width: 300px;
+  }
+  .community {
+    text-align: left;
+  }
+  .heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .navigation {
+    gap: 5px;
+  }
+  .socialLogo {
+    max-width: 28px;
+  }
+  .communityWrap {
+    gap: 20px;
+  }
+}
