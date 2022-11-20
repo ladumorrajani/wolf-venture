@@ -123,6 +123,7 @@ a {
   line-height: 19px;
   transition: all 0.3s ease;
   color: #0a55ff;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -140,10 +141,150 @@ a {
   color: #0a55ff;
 }
 
+.btn-transparent {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  padding: 18px 32px;
+  border-radius: 88px;
+  transition: all 0.3s ease;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-transparent:hover {
+  gap: 10px;
+}
+
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+  gap: 48px;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.slick-slider .slick-dots {
+  bottom: -100px;
+}
+.slick-slider .slick-dots li {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  margin: 0 10px;
+}
+.slick-slider .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  background: #d1d0d6;
+  border-radius: 50%;
+}
+.slick-slider .slick-dots li.slick-active button {
+  background: radial-gradient(#0a55ff 0, #d13fba 100%);
+  backdrop-filter: blur(40px);
+}
+.slick-slider .slick-dots li button:before {
+  display: none;
+}
+
+.accordion__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.accordion__item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.accordion__button {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.accordion__button:after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  right: 0;
+  top: 5px;
+  position: absolute;
+  background: url(../assets/images/dropdown.svg) no-repeat;
+  transform: rotateX(180deg);
+  transition: all 0.3s ease;
+}
+.accordion__button[aria-expanded="true"]:after {
+  transform: rotateX(0);
+}
+
+.accordion__panel {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 70%;
+  margin-top: 20px;
+}
+
+@media (max-width: 1023px) {
+  .my-masonry-grid {
+    gap: 24px;
+  }
+  .btn-transparent {
+    padding: 13px 25px;
+    font-size: 18px;
+  }
+  .accordion__item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .accordion__button {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .accordion__panel {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
 @media (max-width: 767px) {
   .btn {
     padding: 9px 18px;
     font-size: 15px;
     line-height: 17px;
+  }
+  .btn-transparent {
+    padding: 9px 18px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 641px) {
+  .btn-transparent {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  .slick-slider .slick-dots {
+    bottom: -50px;
+  }
+  .accordion__panel {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

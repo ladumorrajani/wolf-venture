@@ -1,0 +1,73 @@
+.faqsSection {
+  margin-bottom: 104px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.description {
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.faqBox {
+  background: url(../../assets/images/testimonial.png) no-repeat;
+  backdrop-filter: blur(40px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1023px) {
+  .heading {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .faqBox {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .faqBox {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 641px) {
+  .heading {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .faqBox {
+    padding: 20px;
+  }
+  .description {
+    margin-bottom: 30px;
+  }
+}

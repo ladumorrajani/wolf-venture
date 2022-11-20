@@ -1,0 +1,108 @@
+.investmentSection {
+  margin-bottom: 74px;
+  padding: 70px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  color: #ffffff;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.investmentList {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.investmentCard {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.cardDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+@media (max-width: 1023px) {
+  .investmentSection {
+    padding: 50px 0 0;
+  }
+  .heading {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 40px;
+  }
+  .investmentList {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .investmentSection {
+    padding: 40px 0 0;
+  }
+  .heading {
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+  .investmentList {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .cardDescription {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 641px) {
+  .investmentSection {
+    padding: 30px 0 0;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .investmentList {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .cardDescription {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}

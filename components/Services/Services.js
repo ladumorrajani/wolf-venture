@@ -34,7 +34,7 @@ export default function Services() {
         <div className={styles.contentWrapper}>
           <h2 className={styles.mainHeading}>Services Designed For You</h2>
           <div className={styles.serviceCardList}>
-            <div ref={tilt} className={styles.serviceCard}>
+            <Link href="/treasury" ref={tilt} className={styles.serviceCard}>
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
                   <Image
@@ -63,8 +63,12 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
-            <div ref={tilt1} className={styles.serviceCard}>
+            </Link>
+            <Link
+              href="/development"
+              ref={tilt1}
+              className={styles.serviceCard}
+            >
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
                   <Image
@@ -93,8 +97,8 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
-            <div ref={tilt2} className={styles.serviceCard}>
+            </Link>
+            <Link href="/design" ref={tilt2} className={styles.serviceCard}>
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
                   <Image
@@ -123,8 +127,8 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
-            <div ref={tilt3} className={styles.serviceCard}>
+            </Link>
+            <Link href="/" ref={tilt3} className={styles.serviceCard}>
               <div className={styles.serviceCardWrap}>
                 <div className={styles.imgBlock}>
                   <Image
@@ -153,7 +157,7 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className={styles.btnWrap}>
             <span className={styles.borderWrap} />
