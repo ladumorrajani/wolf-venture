@@ -7,7 +7,8 @@ import styles from "../styles/Home.module.css";
 import bannerImg from "../assets/images/treasury.svg";
 import cryptoAssets from "../assets/images/crypto-assets.png";
 import rwa from "../assets/images/rwa.png";
-import oneRing from "../assets/images/tone-ring.png";
+import oneRing from "../assets/images/onering-icon.jpg";
+import voidcash from "../assets/images/voidcash.jpg";
 import stableYield from "../assets/images/stable-yield.png";
 import iconTreasury from "../assets/images/itreasury.svg";
 import iconInvesting from "../assets/images/investment.svg";
@@ -36,7 +37,7 @@ export default function Home() {
           width={459}
           height={442}
           cta="Contact Us"
-          url="#"
+          url="https://forms.gle/oFJE1qGy6n2idxJf7"
           slider={[
             "Stable Yields",
             "Crypto Assets",
@@ -51,14 +52,13 @@ export default function Home() {
         />
 
         <OurProjects
-          title="Our Projects In Treasury"
+          title="Treasury Portfolio"
           projectList={[
             {
               title: "Stable Yields",
               description:
                 "Our laser-focused mentality of being custodians of other people’s assets drives us to select investments with stable yields all year round. We specifically choose investments with risk/reward profiles which ensure yields are stable and consistent for the overarching benefit of $WV holders and investors in our upcoming Vaults solutions",
               cta: "View Project",
-              url: "#",
               img: stableYield,
               width: 600,
               height: 600,
@@ -68,17 +68,15 @@ export default function Home() {
               description:
                 "We’re crypto-centric, hence, it bodes well for our treasury activities to largely cover the ownership of best-in-class crypto assets for the treasury. Our research and analyst teams constantly review the current landscape to identify and recommend positions in blue-chip assets of various classes ensuring a high performing treasury.",
               cta: "View Project",
-              url: "#",
               img: cryptoAssets,
               width: 600,
-              height: 700,
+              height: 600,
             },
             {
               title: "RWA",
               description:
                 "In the last few months, our research team, including expert contribution from the industry has started considering real world assets (RWAs) for investments via the treasury. Tokenized RWA is forecast to reach a whopping $16 trillion by 2030, according to Boston Consulting Group research. We are building capacity (in technology and talent) to be able to deliver tokenization solutions for our holders and institutional investors alike.",
               cta: "View Project",
-              url: "#",
               img: rwa,
               width: 616,
               height: 448,
@@ -137,16 +135,16 @@ export default function Home() {
             {
               title:
                 "Wolf Ventures helped us acquire protocol-owned-liquidity through their in-house instant bond solution. They assisted us in every step; smart-contracts, back end, and front-end implementation",
-              author: "Aragorn",
+              author: "0xAragorn",
               designation: "CEO, OneRing",
               img: oneRing,
             },
             {
               title:
-                "Wolf Ventures helped us acquire protocol-owned-liquidity through their in-house instant bond solution. They assisted us in every step; smart-contracts, back end, and front-end implementation",
-              author: "Aragorn",
-              designation: "CEO, OneRing",
-              img: oneRing,
+                "Having been through, and assisted with, several types of migrations, the Wolf Venture team was able to identify an alternative path for the Void Cash migration that was cleaner, simpler and enabled the Void Cash team to preserve, as well as capture back, liquidity. The amount of savings and expertise that the Wolf Venture team was able to provide in such a short period of time was of incredible value to the Void Cash team and project.",
+              author: "Void.Cash",
+              designation: "CEO, Void.Cash",
+              img: voidcash,
             },
           ]}
         />
@@ -158,28 +156,28 @@ export default function Home() {
             {
               heading: "Q1. Why Wolf Ventures?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.",
             },
             {
               heading: "Q2. Why are there no prices?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "Each of our services is uniquely tailored to our customers’ needs. This may enlarge or lessen the work involved, which is why we decided to listen to our customers first, understand exactly what they want, and only then send out a proposal. Please use the contact form and be as precise as possible in describing what you envision. We are always happy to hop on a call with you.",
             },
             {
               heading: "Q3. How long does it usually take to finish a project?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "This strongly depends on the amount of work involved. However, we are able to draw on multiple resources and speed up the process, if our customers wish. It may take a day or a week, but we will stay in close contact throughout the whole process to help you plan accordingly.",
             },
             {
               heading: "Q4. What is Wolf Ventures?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "Wolf Ventures is a Defi Protocol on the Fantom Opera blockchain drawing on multiple pools of talents. Smart contract developers, trading experts, designers, content creators & writers and much more. Further, we are well connected in Decentralized Finance, which allows us to professionally assist anyone who needs our expertise and input.",
             },
             {
               heading:
                 "Q5. Can I use your services without saying it is from you?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "No problem at all! We value the privacy of our customers and won’t disclose any information on them without their clear consent.",
             },
           ]}
         />

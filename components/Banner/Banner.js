@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./Banner.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import bannerImg from "../../assets/images/bannerImg.svg";
 import VanillaTilt from "vanilla-tilt";
@@ -36,16 +35,24 @@ export default function Banner() {
           </div>
           <div ref={tilt1}>
             <h1 className={styles.heading}>$WV</h1>
-            <p className={styles.para}>
-              One token powering multiple █████ journeys
-            </p>
+            <p className={styles.para}>One token powering multiple journeys</p>
             <div className={styles.btnWrap}>
-              <Link href="/" passHref>
-                <a className="btn">Buy $WV</a>
-              </Link>
-              <Link href="/" passHref>
-                <a className="btn secondary">Join Us</a>
-              </Link>
+              <a
+                href="https://spooky.fi/#/swap?outputCurrency=0x911d1feae99e112b5014cfa60038325d863352f1"
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy $WV
+              </a>
+              <a
+                href="https://linktr.ee/wolfventures"
+                className="btn secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Us
+              </a>
             </div>
           </div>
         </div>

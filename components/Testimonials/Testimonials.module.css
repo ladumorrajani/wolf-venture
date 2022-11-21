@@ -111,6 +111,10 @@
   opacity: 75%;
 }
 
+.img {
+  border-radius: 50%;
+}
+
 @media (max-width: 1200px) and (min-width: 1024px) {
   .testimonialBg:before {
     left: -70px;

@@ -13,7 +13,12 @@ export default function InnerBanner(props) {
           <div className={styles.captionCnt}>
             <h1 className={styles.heading}>{props.title}</h1>
             <p className={styles.description}>{props.description}</p>
-            <a href={props.url} className="btn">
+            <a
+              href={props.url}
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {props.cta}
             </a>
           </div>
@@ -47,12 +52,7 @@ export default function InnerBanner(props) {
         </Marquee>
       </div>
       <div className="container">
-        <p className={styles.mainDescription}>
-          Design is one of the most important factors in creating great customer
-          service and experience. We start by getting to know our customers,
-          explore their unique needs and preferences and create designs which
-          are intuitive, engaging and easy to use.
-        </p>
+        <p className={styles.mainDescription}>{props.mainDescription}</p>
       </div>
     </div>
   );

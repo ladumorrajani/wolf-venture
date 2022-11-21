@@ -46,16 +46,23 @@ export default function OurProjects(props) {
                       })}
                     </ul>
                   )}
-                  <a href={item.url} className="btn-transparent">
-                    {item.cta}
-                    <Image
-                      loader={ImageLoader}
-                      src={arrow}
-                      width={32}
-                      height={32}
-                      alt="Arrow"
-                    />
-                  </a>
+                  {item.url && (
+                    <a
+                      href={item.url}
+                      className="btn-transparent"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.cta}
+                      <Image
+                        loader={ImageLoader}
+                        src={arrow}
+                        width={32}
+                        height={32}
+                        alt="Arrow"
+                      />
+                    </a>
+                  )}
                 </div>
               );
             })}

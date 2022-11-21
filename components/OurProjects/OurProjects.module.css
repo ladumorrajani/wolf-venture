@@ -2,7 +2,7 @@
   margin-bottom: 74px;
   padding: 70px 0 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .ourProjects:before {
@@ -42,6 +42,7 @@
   background: url(../../assets/images/project-bg.svg) no-repeat;
   background-size: 85% 100%;
   position: relative;
+  z-index: 1;
 }
 
 .projectCard {

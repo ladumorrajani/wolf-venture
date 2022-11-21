@@ -33,6 +33,7 @@ export default function Testimonials(props) {
                         width={52}
                         height={52}
                         alt="Author"
+                        className={styles.img}
                       />
                       <div>
                         <h4 className={styles.authorName}>{item.author}</h4>

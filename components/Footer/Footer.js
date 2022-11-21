@@ -32,39 +32,48 @@ export default function Footer() {
             <div className={styles.community}>
               <h3 className={styles.heading}>Community</h3>
               <div className={styles.communityWrap}>
-                <Link href="/" passHref>
-                  <div className={styles.socialLogo}>
-                    <Image
-                      loader={ImageLoader}
-                      src={twitter}
-                      width={40}
-                      height={40}
-                      alt="twitter"
-                    />
-                  </div>
-                </Link>
-                <Link href="/" passHref>
-                  <div className={styles.socialLogo}>
-                    <Image
-                      loader={ImageLoader}
-                      src={telegram}
-                      width={40}
-                      height={40}
-                      alt="telegram"
-                    />
-                  </div>
-                </Link>
-                <Link href="/" passHref>
-                  <div className={styles.socialLogo}>
-                    <Image
-                      loader={ImageLoader}
-                      src={discord}
-                      width={40}
-                      height={40}
-                      alt="discord"
-                    />
-                  </div>
-                </Link>
+                <a
+                  href="https://twitter.com/wolf_ventures"
+                  className={styles.socialLogo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    loader={ImageLoader}
+                    src={twitter}
+                    width={40}
+                    height={40}
+                    alt="twitter"
+                  />
+                </a>
+                <a
+                  href="https://t.me/Wolf_Ventures"
+                  className={styles.socialLogo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    loader={ImageLoader}
+                    src={telegram}
+                    width={40}
+                    height={40}
+                    alt="telegram"
+                  />
+                </a>
+                <a
+                  href="https://discord.com/invite/75rVuzth"
+                  className={styles.socialLogo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    loader={ImageLoader}
+                    src={discord}
+                    width={40}
+                    height={40}
+                    alt="discord"
+                  />
+                </a>
               </div>
             </div>
             <div className={styles.footerLinks}>
@@ -72,14 +81,22 @@ export default function Footer() {
                 <h3 className={styles.heading}>Wolf Ventures</h3>
                 <ul className={styles.navigation}>
                   <li>
-                    <Link href="/" passHref>
+                    <a
+                      href="https://app.wolf.ventures/treasury"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Treasury
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="/" passHref>
+                    <a
+                      href="https://forms.gle/oFJE1qGy6n2idxJf7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Contact
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -87,14 +104,13 @@ export default function Footer() {
                 <h3 className={styles.heading}>Docs</h3>
                 <ul className={styles.navigation}>
                   <li>
-                    <Link href="/" passHref>
+                    <a
+                      href="https://docs.wolf.ventures/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Whitepaper
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" passHref>
-                      Audit
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

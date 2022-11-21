@@ -34,20 +34,41 @@ export default function Header() {
           </Link>
           <ul className={styles.navigation}>
             <li>
-              <Link href="/" passHref>
+              <a
+                href="https://docs.wolf.ventures/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Documentation
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/" passHref>
-                Governance
-              </Link>
+              <a
+                href="https://medium.com/@wolfventures"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Medium
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://app.wolf.ventures/treasury"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Treasury
+              </a>
             </li>
           </ul>
           <div className={styles.menuwrap}>
-            <Link href="/" passHref>
+            <a
+              href="https://app.wolf.ventures"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className={styles.button}>Dashboard</div>
-            </Link>
+            </a>
             <div className={styles.mobileMenu}>
               <div className={styles.hamburger} onClick={menuOpen}>
                 <span className={styles.menu} />
@@ -56,14 +77,31 @@ export default function Header() {
                 <div className={styles.close} onClick={menuClose} />
                 <ul className={styles.navigation}>
                   <li>
-                    <Link href="/" passHref>
+                    <a
+                      href="https://docs.wolf.ventures/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Documentation
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="/" passHref>
-                      Governance
-                    </Link>
+                    <a
+                      href="https://medium.com/@wolfventures"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.wolf.ventures/treasury"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Treasury
+                    </a>
                   </li>
                 </ul>
               </div>

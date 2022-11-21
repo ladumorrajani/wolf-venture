@@ -34,136 +34,143 @@ export default function Services() {
         <div className={styles.contentWrapper}>
           <h2 className={styles.mainHeading}>Services Designed For You</h2>
           <div className={styles.serviceCardList}>
-            <Link href="/treasury" ref={tilt} className={styles.serviceCard}>
-              <div className={styles.serviceCardWrap}>
-                <div className={styles.imgBlock}>
-                  <Image
-                    loader={ImageLoader}
-                    src={treasury}
-                    width={226}
-                    height={218}
-                    alt="Treasury"
-                  />
-                </div>
-                <div className={styles.contentBlock}>
-                  <div className={styles.headingWrap}>
-                    <h3 className={styles.serviceHeading}>Treasury</h3>
-                    <div className={styles.arrow}>
-                      <Image
-                        loader={ImageLoader}
-                        src={arrow}
-                        width={32}
-                        height={32}
-                        alt="Arrow"
-                      />
-                    </div>
+            <div ref={tilt} className={styles.serviceCard}>
+              <Link href="/treasury">
+                <div className={styles.serviceCardWrap}>
+                  <div className={styles.imgBlock}>
+                    <Image
+                      loader={ImageLoader}
+                      src={treasury}
+                      width={226}
+                      height={218}
+                      alt="Treasury"
+                    />
                   </div>
-                  <p className={styles.description}>
-                    How and what we do with the treasury
-                  </p>
-                </div>
-              </div>
-            </Link>
-            <Link
-              href="/development"
-              ref={tilt1}
-              className={styles.serviceCard}
-            >
-              <div className={styles.serviceCardWrap}>
-                <div className={styles.imgBlock}>
-                  <Image
-                    loader={ImageLoader}
-                    src={devwork}
-                    width={184}
-                    height={155}
-                    alt="devwork"
-                  />
-                </div>
-                <div className={styles.contentBlock}>
-                  <div className={styles.headingWrap}>
-                    <h3 className={styles.serviceHeading}>DevWorks</h3>
-                    <div className={styles.arrow}>
-                      <Image
-                        loader={ImageLoader}
-                        src={arrow}
-                        width={32}
-                        height={32}
-                        alt="Arrow"
-                      />
+                  <div className={styles.contentBlock}>
+                    <div className={styles.headingWrap}>
+                      <h3 className={styles.serviceHeading}>Treasury</h3>
+                      <div className={styles.arrow}>
+                        <Image
+                          loader={ImageLoader}
+                          src={arrow}
+                          width={32}
+                          height={32}
+                          alt="Arrow"
+                        />
+                      </div>
                     </div>
+                    <p className={styles.description}>
+                      How and what we do with the treasury
+                    </p>
                   </div>
-                  <p className={styles.description}>
-                    Development works for your all projects
-                  </p>
                 </div>
-              </div>
-            </Link>
-            <Link href="/design" ref={tilt2} className={styles.serviceCard}>
-              <div className={styles.serviceCardWrap}>
-                <div className={styles.imgBlock}>
-                  <Image
-                    loader={ImageLoader}
-                    src={design}
-                    width={233}
-                    height={135}
-                    alt="design"
-                  />
-                </div>
-                <div className={styles.contentBlock}>
-                  <div className={styles.headingWrap}>
-                    <h3 className={styles.serviceHeading}>Design</h3>
-                    <div className={styles.arrow}>
-                      <Image
-                        loader={ImageLoader}
-                        src={arrow}
-                        width={32}
-                        height={32}
-                        alt="Arrow"
-                      />
+              </Link>
+            </div>
+            <div ref={tilt1} className={styles.serviceCard}>
+              <Link href="/development">
+                <div className={styles.serviceCardWrap}>
+                  <div className={styles.imgBlock}>
+                    <Image
+                      loader={ImageLoader}
+                      src={devwork}
+                      width={184}
+                      height={155}
+                      alt="devwork"
+                    />
+                  </div>
+                  <div className={styles.contentBlock}>
+                    <div className={styles.headingWrap}>
+                      <h3 className={styles.serviceHeading}>DevWorks</h3>
+                      <div className={styles.arrow}>
+                        <Image
+                          loader={ImageLoader}
+                          src={arrow}
+                          width={32}
+                          height={32}
+                          alt="Arrow"
+                        />
+                      </div>
                     </div>
+                    <p className={styles.description}>
+                      Development works for your all projects
+                    </p>
                   </div>
-                  <p className={styles.description}>
-                    Bringing design concepts to life for projects of all kinds
-                  </p>
                 </div>
-              </div>
-            </Link>
-            <Link href="/" ref={tilt3} className={styles.serviceCard}>
-              <div className={styles.serviceCardWrap}>
-                <div className={styles.imgBlock}>
-                  <Image
-                    loader={ImageLoader}
-                    src={flagship}
-                    width={316}
-                    height={164}
-                    alt="flagship"
-                  />
-                </div>
-                <div className={styles.contentBlock}>
-                  <div className={styles.headingWrap}>
-                    <h3 className={styles.serviceHeading}>Flagships</h3>
-                    <div className={styles.arrow}>
-                      <Image
-                        loader={ImageLoader}
-                        src={arrow}
-                        width={32}
-                        height={32}
-                        alt="Arrow"
-                      />
+              </Link>
+            </div>
+            <div ref={tilt2} className={styles.serviceCard}>
+              <Link href="/design">
+                <div className={styles.serviceCardWrap}>
+                  <div className={styles.imgBlock}>
+                    <Image
+                      loader={ImageLoader}
+                      src={design}
+                      width={233}
+                      height={135}
+                      alt="design"
+                    />
+                  </div>
+                  <div className={styles.contentBlock}>
+                    <div className={styles.headingWrap}>
+                      <h3 className={styles.serviceHeading}>Design</h3>
+                      <div className={styles.arrow}>
+                        <Image
+                          loader={ImageLoader}
+                          src={arrow}
+                          width={32}
+                          height={32}
+                          alt="Arrow"
+                        />
+                      </div>
                     </div>
+                    <p className={styles.description}>
+                      Bringing design concepts to life for projects of all kinds
+                    </p>
                   </div>
-                  <p className={styles.description}>
-                    {`One-of-a-kind products/ features we've built and use`}
-                  </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
+            <div ref={tilt3} className={styles.serviceCard}>
+              <Link href="/">
+                <div className={styles.serviceCardWrap}>
+                  <div className={styles.imgBlock}>
+                    <Image
+                      loader={ImageLoader}
+                      src={flagship}
+                      width={316}
+                      height={164}
+                      alt="flagship"
+                    />
+                  </div>
+                  <div className={styles.contentBlock}>
+                    <div className={styles.headingWrap}>
+                      <h3 className={styles.serviceHeading}>Flagships</h3>
+                      <div className={styles.arrow}>
+                        <Image
+                          loader={ImageLoader}
+                          src={arrow}
+                          width={32}
+                          height={32}
+                          alt="Arrow"
+                        />
+                      </div>
+                    </div>
+                    <p className={styles.description}>{`Coming soon`}</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
           <div className={styles.btnWrap}>
             <span className={styles.borderWrap} />
-            <Link href="/" passHref>
-              <a className={styles.btn}>Contact Us</a>
-            </Link>
+            <a
+              href="https://forms.gle/oFJE1qGy6n2idxJf7"
+              className={styles.btn}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact Us
+            </a>
           </div>
         </div>
       </div>

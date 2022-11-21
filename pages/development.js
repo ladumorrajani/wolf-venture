@@ -7,7 +7,8 @@ import styles from "../styles/Home.module.css";
 import bannerImg from "../assets/images/development.svg";
 import migration from "../assets/images/migration.png";
 import minting from "../assets/images/minting.png";
-import oneRing from "../assets/images/tone-ring.png";
+import oneRing from "../assets/images/onering-icon.jpg";
+import voidcash from "../assets/images/voidcash.jpg";
 import bonds from "../assets/images/bonds.png";
 import OurProjects from "../components/OurProjects/OurProjects";
 import Statistics from "../components/Statistics/Statistics";
@@ -32,7 +33,7 @@ export default function Home() {
           width={445}
           height={368}
           cta="Contact Us"
-          url="#"
+          url="https://forms.gle/oFJE1qGy6n2idxJf7"
           slider={[
             "Smart Contracts",
             "Front-End",
@@ -47,7 +48,7 @@ export default function Home() {
         />
 
         <OurProjects
-          title="Our Projects In Development"
+          title="Development Portfolio"
           projectList={[
             {
               title: "Bonds as a Service",
@@ -60,7 +61,7 @@ export default function Home() {
                 "Asisstance",
               ],
               cta: "View Project",
-              url: "#",
+              url: "https://evm.onering.tools/bonds",
               img: bonds,
               width: 600,
               height: 428,
@@ -76,10 +77,10 @@ export default function Home() {
                 "Assistance",
               ],
               cta: "View Project",
-              url: "#",
+              url: "https://evm.onering.tools/bonds",
               img: minting,
               width: 600,
-              height: 535,
+              height: 428,
             },
             {
               title: "Token Migration",
@@ -87,7 +88,7 @@ export default function Home() {
                 "Provided Void Cash with guidance for their token migration",
               features: ["Smart-contracts", "Implementation", "Assistance"],
               cta: "View Project",
-              url: "#",
+              url: "https://mixer.void.cash",
               img: migration,
               width: 600,
               height: 335,
@@ -122,16 +123,16 @@ export default function Home() {
             {
               title:
                 "Wolf Ventures helped us acquire protocol-owned-liquidity through their in-house instant bond solution. They assisted us in every step; smart-contracts, back end, and front-end implementation",
-              author: "Aragorn",
+              author: "0xAragorn",
               designation: "CEO, OneRing",
               img: oneRing,
             },
             {
               title:
-                "Wolf Ventures helped us acquire protocol-owned-liquidity through their in-house instant bond solution. They assisted us in every step; smart-contracts, back end, and front-end implementation",
-              author: "Aragorn",
-              designation: "CEO, OneRing",
-              img: oneRing,
+                "Having been through, and assisted with, several types of migrations, the Wolf Venture team was able to identify an alternative path for the Void Cash migration that was cleaner, simpler and enabled the Void Cash team to preserve, as well as capture back, liquidity. The amount of savings and expertise that the Wolf Venture team was able to provide in such a short period of time was of incredible value to the Void Cash team and project.",
+              author: "Void.Cash",
+              designation: "CEO, Void.Cash",
+              img: voidcash,
             },
           ]}
         />
@@ -143,28 +144,28 @@ export default function Home() {
             {
               heading: "Q1. Why Wolf Ventures?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.",
             },
             {
               heading: "Q2. Why are there no prices?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "Each of our services is uniquely tailored to our customers’ needs. This may enlarge or lessen the work involved, which is why we decided to listen to our customers first, understand exactly what they want, and only then send out a proposal. Please use the contact form and be as precise as possible in describing what you envision. We are always happy to hop on a call with you.",
             },
             {
               heading: "Q3. How long does it usually take to finish a project?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "This strongly depends on the amount of work involved. However, we are able to draw on multiple resources and speed up the process, if our customers wish. It may take a day or a week, but we will stay in close contact throughout the whole process to help you plan accordingly.",
             },
             {
               heading: "Q4. What is Wolf Ventures?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "Wolf Ventures is a Defi Protocol on the Fantom Opera blockchain drawing on multiple pools of talents. Smart contract developers, trading experts, designers, content creators & writers and much more. Further, we are well connected in Decentralized Finance, which allows us to professionally assist anyone who needs our expertise and input.",
             },
             {
               heading:
                 "Q5. Can I use your services without saying it is from you?",
               content:
-                "We pride ourselves on providing high-quality services and assisting our customers through all steps involved. Using our services ourselves and having operated in DeFi for a while now, our skills and experience allow us to truly understand our customers’ needs and provide valuable input.              ",
+                "No problem at all! We value the privacy of our customers and won’t disclose any information on them without their clear consent.",
             },
           ]}
         />

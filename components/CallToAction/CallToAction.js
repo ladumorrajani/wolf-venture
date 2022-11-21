@@ -11,12 +11,22 @@ export default function CallToAction() {
               The Wolves That Build, Trade and Invest for You.
             </h2>
             <div className={styles.btnWrap}>
-              <Link href="/" passHref>
-                <a className="btn">Open App</a>
-              </Link>
-              <Link href="/" passHref>
-                <a className="btn secondary">Join Community</a>
-              </Link>
+              <a
+                href="https://app.wolf.ventures/"
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open App
+              </a>
+              <a
+                href="https://linktr.ee/wolfventures"
+                className="btn secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Community
+              </a>
             </div>
           </div>
         </div>
